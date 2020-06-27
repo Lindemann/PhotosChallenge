@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		82A9746924A56E1500B5AEE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9746824A56E1500B5AEE9 /* AppDelegate.swift */; };
 		82A9746B24A56E1500B5AEE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9746A24A56E1500B5AEE9 /* SceneDelegate.swift */; };
-		82A9746D24A56E1500B5AEE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9746C24A56E1500B5AEE9 /* ViewController.swift */; };
+		82A9746D24A56E1500B5AEE9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9746C24A56E1500B5AEE9 /* MainViewController.swift */; };
 		82A9747024A56E1500B5AEE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A9746E24A56E1500B5AEE9 /* Main.storyboard */; };
 		82A9747224A56E1900B5AEE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82A9747124A56E1900B5AEE9 /* Assets.xcassets */; };
 		82A9747524A56E1900B5AEE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82A9747324A56E1900B5AEE9 /* LaunchScreen.storyboard */; };
 		82A9748024A56E1A00B5AEE9 /* PhotosChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9747F24A56E1A00B5AEE9 /* PhotosChallengeTests.swift */; };
+		82A9748F24A591EF00B5AEE9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9748D24A591EF00B5AEE9 /* PhotoCollectionViewCell.swift */; };
+		82A9749024A591EF00B5AEE9 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A9748E24A591EF00B5AEE9 /* PhotoCollectionViewCell.xib */; };
+		82A9749424A61D7000B5AEE9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A9749324A61D7000B5AEE9 /* APIService.swift */; };
+		82C4B87324A67A5E00179DF2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 82C4B87224A67A5E00179DF2 /* Kingfisher */; };
+		82C4B87724A6883000179DF2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4B87624A6883000179DF2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,7 @@
 		82A9746524A56E1500B5AEE9 /* PhotosChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A9746824A56E1500B5AEE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82A9746A24A56E1500B5AEE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82A9746C24A56E1500B5AEE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82A9746C24A56E1500B5AEE9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		82A9746F24A56E1500B5AEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82A9747124A56E1900B5AEE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82A9747424A56E1900B5AEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +43,10 @@
 		82A9747B24A56E1A00B5AEE9 /* PhotosChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotosChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A9747F24A56E1A00B5AEE9 /* PhotosChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosChallengeTests.swift; sourceTree = "<group>"; };
 		82A9748124A56E1A00B5AEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A9748D24A591EF00B5AEE9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		82A9748E24A591EF00B5AEE9 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		82A9749324A61D7000B5AEE9 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		82C4B87624A6883000179DF2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C4B87324A67A5E00179DF2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +89,12 @@
 		82A9746724A56E1500B5AEE9 /* PhotosChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				82A9746824A56E1500B5AEE9 /* AppDelegate.swift */,
-				82A9746A24A56E1500B5AEE9 /* SceneDelegate.swift */,
-				82A9746C24A56E1500B5AEE9 /* ViewController.swift */,
+				82A9746C24A56E1500B5AEE9 /* MainViewController.swift */,
+				82C4B87624A6883000179DF2 /* DetailViewController.swift */,
 				82A9746E24A56E1500B5AEE9 /* Main.storyboard */,
-				82A9747124A56E1900B5AEE9 /* Assets.xcassets */,
-				82A9747324A56E1900B5AEE9 /* LaunchScreen.storyboard */,
-				82A9747624A56E1900B5AEE9 /* Info.plist */,
+				82A9749324A61D7000B5AEE9 /* APIService.swift */,
+				82C4B87524A684CD00179DF2 /* Cell */,
+				82A9748A24A56ECB00B5AEE9 /* Supporting Files */,
 			);
 			path = PhotosChallenge;
 			sourceTree = "<group>";
@@ -97,6 +106,27 @@
 				82A9748124A56E1A00B5AEE9 /* Info.plist */,
 			);
 			path = PhotosChallengeTests;
+			sourceTree = "<group>";
+		};
+		82A9748A24A56ECB00B5AEE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82A9746824A56E1500B5AEE9 /* AppDelegate.swift */,
+				82A9746A24A56E1500B5AEE9 /* SceneDelegate.swift */,
+				82A9747124A56E1900B5AEE9 /* Assets.xcassets */,
+				82A9747324A56E1900B5AEE9 /* LaunchScreen.storyboard */,
+				82A9747624A56E1900B5AEE9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82C4B87524A684CD00179DF2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82A9748D24A591EF00B5AEE9 /* PhotoCollectionViewCell.swift */,
+				82A9748E24A591EF00B5AEE9 /* PhotoCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +145,9 @@
 			dependencies = (
 			);
 			name = PhotosChallenge;
+			packageProductDependencies = (
+				82C4B87224A67A5E00179DF2 /* Kingfisher */,
+			);
 			productName = PhotosChallenge;
 			productReference = 82A9746524A56E1500B5AEE9 /* PhotosChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 82A9745C24A56E1500B5AEE9;
+			packageReferences = (
+				82C4B87124A67A5E00179DF2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 82A9746624A56E1500B5AEE9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A9747524A56E1900B5AEE9 /* LaunchScreen.storyboard in Resources */,
+				82A9749024A591EF00B5AEE9 /* PhotoCollectionViewCell.xib in Resources */,
 				82A9747224A56E1900B5AEE9 /* Assets.xcassets in Resources */,
 				82A9747024A56E1500B5AEE9 /* Main.storyboard in Resources */,
 			);
@@ -200,9 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82A9746D24A56E1500B5AEE9 /* ViewController.swift in Sources */,
+				82A9746D24A56E1500B5AEE9 /* MainViewController.swift in Sources */,
+				82A9748F24A591EF00B5AEE9 /* PhotoCollectionViewCell.swift in Sources */,
 				82A9746924A56E1500B5AEE9 /* AppDelegate.swift in Sources */,
+				82C4B87724A6883000179DF2 /* DetailViewController.swift in Sources */,
 				82A9746B24A56E1500B5AEE9 /* SceneDelegate.swift in Sources */,
+				82A9749424A61D7000B5AEE9 /* APIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindemann.PhotosChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindemann.PhotosChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -469,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82C4B87124A67A5E00179DF2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82C4B87224A67A5E00179DF2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82C4B87124A67A5E00179DF2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82A9745D24A56E1500B5AEE9 /* Project object */;
 }

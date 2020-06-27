@@ -10,21 +10,26 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var closeButton: UIButton!
+    var photo: Photo? {
+        didSet {
+            imageView.kf.setImage(with: photo?.url)
+        }
+    }
 
-        // Do any additional setup after loading the view.
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if traitCollection.userInterfaceStyle == .dark {
+            view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+            closeButton.tintColor = .white
+        } else {
+            view.backgroundColor = UIColor.white.withAlphaComponent(0.9)
+            closeButton.tintColor = .black
+        }
     }
-    */
-
 }
